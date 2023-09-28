@@ -26,9 +26,11 @@
         .center{
           background-color:white;
           width:555px;
-          text-align: center;
         }
 
+        .centered_text {
+            text-align: center;
+        } 
 
         .article-text {
             max-width: 800px; /
@@ -62,12 +64,17 @@
             margin: 0;
         } 
         
-        p_centered {
-            margin: 0;
-            text-align: center;
-        } 
-
         tiny {
+            font-family: Georgia, Tinos, serif;
+            font-weight: normal;
+            font-style: normal;
+            font-size: 13px;
+            text-align: right;
+            color: grey;
+            float:right;
+        }
+
+        tiny_centered {
             font-family: Georgia, Tinos, serif;
             font-weight: normal;
             font-style: normal;
@@ -77,7 +84,6 @@
             float:center;
         }
 
-
         ul {
             list-style-type: '- ';
             margin: 0
@@ -85,8 +91,8 @@
 
 
         a {
-/*            color: inherit;*/
-        } 
+            color: royalblue;
+        }
 
         img {
             max-width: 100%;
@@ -96,7 +102,6 @@
             -webkit-box-shadow: 2px 5px 20px 1px #121601ad;
             -moz-box-shadow: 2px 5px 20px 1px #121601ad;
         }
-
         
         @media (max-width: 768px) {
             body {
@@ -113,9 +118,10 @@
 <body>
 <div class="flex">
     <div class="center" >
+    <div class="centered_text" >
         <b>Gleb Belov | BI Portfolio</b>
         <br><br>
-        <tiny>NDA data removed or faked</tiny>
+        <tiny_centered>NDA data removed or faked</tiny_centered>
         
         <br><br><br>
         Datalens<br><br>
@@ -139,15 +145,16 @@
         <br><br><br>
         <img src="src/powerbi_3.jpeg" alt="a picture of PowerBI report" onerror="this.src='https://github.com/yogleb/yogleb.github.io/blob/main/src/powerbi_3.jpeg?raw=true';">
         <!-- <br><br><br>
-        <img src="src/powerbi_4.jpeg" alt="a picture of PowerBI report"> -->
+        <img src="src/powerbi_4.jpeg" alt="a picture of PowerBI report"> 
         <br><br><br><br><br>
 
         bonus cat
         <br><br>
-        <img src="src/cat.jpg" alt="a picture of bonus cat" onerror="this.src='https://github.com/yogleb/yogleb.github.io/blob/main/src/cat.jpg?raw=true';">
+        <img src="src/cat.jpg" alt="a picture of bonus cat" onerror="this.src='https://github.com/yogleb/yogleb.github.io/blob/main/src/cat.jpg?raw=true';">-->
         <br><br><br><br><br>
-        <tiny><a href="./">back to CV</a></tiny>
+        <a href="./">back to CV</a>
         <br><br>
+    </div>
     </div>
 </div>
 </body>
