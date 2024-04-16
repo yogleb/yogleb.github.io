@@ -1,134 +1,128 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>bi</title>
+    <title>glebi</title>
     <style>
-        
         body {
-            font-family: 'Verdana', sans-serif;
-            font-weight: normal;
-            font-style: normal;
-            color: black;
-            margin-left: 22px;
-            margin-right: 22px;
-            margin-top: 22px;
-            margin-bottom: 22px;
+            font-family: 'Monospace', monospace;
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+            color: #000;
+            overflow-x: hidden; /* Скрыть горизонтальную полосу прокрутки */
+            font-size: 14px;
         }
 
-        .flex{
-          display: flex;
-          align-items:center;
-          justify-content: center;
-        }
-        
-        .center{
-          background-color:white;
-          width:555px;
-        }
-
-        .centered_text {
+        header {
+            background-color: #008000;
+            color: #fff;
             text-align: center;
-        } 
-
-        .article-text {
-            max-width: 800px; /
-            margin: left; 
-            color: black;
-            font-size: 16px;
+            padding: 1em;
         }
 
-        .normal-shadow {
-            background-size: cover;
-            background-position: 0% 100%;
-            border-radius: 40px;
-            height: 320px;
-            width: 320px;
-            box-shadow: 2px 5px 20px 1px #121601ad;
+        section {
+            max-width: 90%;
+            margin: 2em auto;
+            padding: 1em;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
 
-        h1 {
-            font-weight: lighter;
-            font-size: 22px;
-            color: grey;
-            margin: 0; 
-        }
-
-        h4 {
-            font-size: 16px;
-            margin: 0; 
+        h1,
+        h2,
+        h3 {
+            color: #000000;
         }
 
         p {
-            margin: 0;
-        } 
-        
-        tiny {
-            font-family: Georgia, Tinos, serif;
-            font-weight: normal;
-            font-style: normal;
-            font-size: 13px;
-            text-align: right;
-            color: grey;
-            float:right;
+            line-height: 1.6;
+            color: #000;
         }
 
-        tiny_centered {
-            font-family: Georgia, Tinos, serif;
-            font-weight: normal;
-            font-style: normal;
-            font-size: 13px;
-            text-align: right;
-            color: grey;
-            float:center;
+        .highlight {
+            color: #008000;
         }
 
-        ul {
-            list-style-type: '- ';
-            margin: 0
+        footer {
+            text-align: center;
+            padding: 1em;
+            background-color: #008000;
+            color: #fff;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
         }
 
-        a {
-            color: royalblue;
+        .bar-chart {
+            position: relative;
+            margin: 1em 0;
+            height: 20px;
         }
 
-        img {
-            max-width: 100%;
-            max-height: 100%;
-            border-radius: 12px;
-            box-shadow: 2px 5px 20px 1px #121601ad;
-            -webkit-box-shadow: 2px 5px 20px 1px #121601ad;
-            -moz-box-shadow: 2px 5px 20px 1px #121601ad;
+        .bar {
+            position: absolute;
+            height: 100%;
+            background-color: #008000;
+            border-radius: 10px;
+            transition: width 1s ease;
         }
-        
-        @media (max-width: 768px) {
-            body {
-                font-size: 16px;
-            }
+
+        .bar1 {
+            width: 70%;
+        }
+
+        .bar2 {
+            width: 30%;
         }
     </style>
 </head>
 
-
-<!-- CONTENT -->
-
-
 <body>
-    <div class="flex">
-    <div class="center" >
-    <div class="article-text">
-    
-    <h2> интеграция BI </h2>
+    <header>
+        <h1>Разработчик BI</h1>
+    </header>
 
-    work in progress
+    <section>
+        <h2>Разблокирование Бизнес-Потенциала с Помощью Данных</h2>
+        <p>Примите мощь принятия решений на основе данных и поднимите свой бизнес на новые высоты. Вот как мы проводим вас через процесс интеграции BI:</p>
+    </section>
 
-    </div>
-    <br>
-    <a href="https://yogleb.github.io">CV</a>
+    <section>
+        <h2>Наша Пошаговая Методика</h2>
 
-    <tiny>обновлено: Январь, 2024</tiny>
-    </div>
-</div>
+        <div class="bar-chart">
+            <div class="bar bar1"></div>
+            <div class="bar bar2"></div>
+        </div>
+
+        <h3 class="highlight">1. Интеграция открытого BI-Инструмента</h3>
+        <p>Мы начинаем с беспроблемной интеграции мощного открытого BI-инструмента в инфраструктуру вашей компании, обеспечивая плавный переход к процессам, основанным на данных.</p>
+
+        <h3 class="highlight">2. Создание Систем Безопасности</h3>
+        <p>Затем мы придаем приоритет безопасности ваших данных. Мы тщательно настраиваем надежные системы безопасности для защиты вашей информации, поддерживая конфиденциальность и целостность.</p>
+
+        <h3 class="highlight">3. Создание Эффективных Топ-Линейных Панелей</h3>
+        <p>Мы создаем топ-линейные панели, адаптированные к вашим бизнес-потребностям, предоставляя четкие визуализации и действенные исследования, которые могут быть использованы вашими принимающими решения.</p>
+
+        <h3 class="highlight">4. Обучение Пользователей для Эффективного Использования</h3>
+        <p>Обеспечив успешное принятие инструментов BI, мы проводим обширные тренировочные сессии для пользователей. Ваша команда учится навигации и эффективному использованию возможностей панелей управления.</p>
+
+        <h3 class="highlight">5. Стандарты Стиля и Сертификации Панелей Управления</h3>
+        <p>Чтобы поддерживать последовательность и качество, мы создаем стандарты стиля и внедряем сертификацию панелей управления, обеспечивая единый и отточенный опыт BI в вашей организации.</p>
+    </section>
+
+    <section>
+        <h2>Готовы Трансформировать Ваш Бизнес?</h2>
+        <p>Исследуйте потенциал бизнес-аналитики с нашими экспертными услугами по интеграции BI. Свяжитесь с нами, чтобы начать путь к успеху на основе данных.</p>
+    </section>
+
+    <footer>
+        &copy; 2024 Ваше Имя - Разработчик BI
+    </footer>
 </body>
+
 </html>
