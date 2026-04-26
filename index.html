@@ -5,223 +5,272 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gleb Belov</title>
     <style>
-        
         body {
-            font-family: 'Helvetica', monospace;
-            font-weight: normal;
-            font-style: normal;
-            color: black;
-            margin-left: 22px;
-            margin-right: 22px;
-            margin-top: 22px;
-            margin-bottom: 22px;
-        }
-
-        .flex{
-          display: flex;
-          align-items:center;
-          justify-content: center;
-        }
-        
-        .center{
-          background-color:white;
-          width:555px;
-        }
-
-        .centered_text {
-            text-align: center;
-        } 
-
-        .article-text {
-            max-width: 800px; /
-            margin: left; 
-            color: black;
-            font-size: 16px;
-        }
-
-        .normal-shadow {
-            background-size: cover;
-            background-position: 0% 100%;
-            border-radius: 40px;
-            height: 320px;
-            width: 320px;
-            box-shadow: 2px 5px 20px 1px #121601ad;
-        }
-
-        h1 {
-            font-weight: lighter;
-            font-size: 22px;
-            color: grey;
-            margin: 0; 
-        }
-
-        h4 {
-            font-size: 16px;
-            margin: 0; 
-        }
-
-        p {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            color: #1a1a1a;
             margin: 0;
-        } 
-        
-        tiny {
-            font-family: Georgia, Tinos, serif;
-            font-weight: normal;
-            font-style: normal;
-            font-size: 13px;
-            text-align: right;
-            color: grey;
-            float:right;
+            padding: 40px 20px;
+            font-size: 15px;
+            line-height: 1.5;
+            background: #fff;
         }
 
-        tiny_centered {
-            font-family: Georgia, Tinos, serif;
-            font-weight: normal;
-            font-style: normal;
-            font-size: 13px;
-            text-align: right;
-            color: grey;
-            float:center;
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
         }
 
-        ul {
-            list-style-type: '- ';
-            margin: 0
+        header {
+            margin-bottom: 28px;
+        }
+
+        .name {
+            font-size: 20px;
+            font-weight: 600;
+            margin: 0 0 6px;
+        }
+
+        .subtitle {
+            color: #555;
+            margin: 0 0 4px;
+        }
+
+        .contacts {
+            color: #888;
+            font-size: 13px;
+            margin-top: 10px;
+        }
+
+        .contacts a {
+            color: #4169e1;
+            text-decoration: none;
+        }
+
+        .contacts a:hover {
+            text-decoration: underline;
+        }
+
+        .contacts span::before {
+            content: ' · ';
+        }
+
+        .contacts span:first-child::before {
+            content: '';
         }
 
         a {
-            color: royalblue;
+            color: #4169e1;
+            text-decoration: none;
         }
 
-        /*img {
-            max-width: 100%;
-            max-height: 100%;
-            border-radius: 12px;
-            box-shadow: 2px 5px 20px 1px #121601ad;
-            -webkit-box-shadow: 2px 5px 20px 1px #121601ad;
-            -moz-box-shadow: 2px 5px 20px 1px #121601ad;
-        } */
-        
-        @media (max-width: 768px) {
-            body {
-                font-size: 16px;
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .projects-link {
+            margin-bottom: 28px;
+        }
+
+        h2 {
+            font-family: Georgia, 'Times New Roman', serif;
+            font-size: 14px;
+            font-weight: normal;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #999;
+            margin: 28px 0 14px;
+        }
+
+        .job {
+            margin-bottom: 20px;
+        }
+
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+        }
+
+        .company {
+            font-weight: 600;
+        }
+
+        .company a {
+            color: #4169e1;
+        }
+
+        .company a:hover {
+            text-decoration: underline;
+        }
+
+        .dates {
+            font-family: Georgia, 'Times New Roman', serif;
+            font-size: 13px;
+            color: #888;
+            white-space: nowrap;
+            margin-left: 12px;
+        }
+
+        .role {
+            color: #555;
+            margin: 2px 0 6px;
+        }
+
+        ul {
+            margin: 6px 0 0;
+            padding-left: 18px;
+        }
+
+        li {
+            margin-bottom: 3px;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: auto 1fr;
+            gap: 4px 12px;
+        }
+
+        .skills-label {
+            font-weight: 600;
+            color: #555;
+        }
+
+        footer {
+            margin-top: 36px;
+            text-align: center;
+            color: #bbb;
+            font-size: 12px;
+        }
+
+        footer img {
+            display: block;
+            margin: 12px auto 0;
+            width: 80px;
+        }
+
+        @media (max-width: 480px) {
+            .job-header {
+                flex-direction: column;
+            }
+            .dates {
+                margin-left: 0;
             }
         }
     </style>
 </head>
-
-
-<!-- CONTENT -->
-
-
 <body>
-    <div class="flex">
-    <div class="center" >
-    <div class="article-text">
-    
+    <div class="container">
+        <header>
+            <div class="name">Gleb Belov</div>
+            <div class="subtitle">Product Architect with 6+ years experience in data-driven solutions.</div>
+            <div class="subtitle">I design product architecture and drive adoption for enterprise clients</div>
+            <div class="contacts">
+                <span>GMT+3</span>
+                <span><a href="https://t.me/glebbe">Tg: @glebbe</a></span>
+                <span><a href="mailto:glebbelov@yandex-team.com">glebbelov@yandex-team.com</a></span>
+                <span><a href="https://www.linkedin.com/in/gleb-belov-568616259/">LinkedIn</a></span>
+            </div>
+        </header>
 
-    <tiny>
-        GMT+3
-        <br><a href="https://t.me/glebbe">Tg: @glebbe</a>
-        <br><a href="mailto:glebbelov@yandex-team.com">glebbelov@yandex-team.com</a>
-        <br><a href="https://www.linkedin.com/in/gleb-belov-568616259/">LinkedIn</a>
-    </tiny>
-    
-    <p>
-    <b>Gleb Belov</b>
-    <br><br>
-    Product Architect with 6+ years experience in data-driven solutions.
-    <br>
-    I design product architecture and drive adoption for enterprise clients
-    
-    <br><br>
-        
-    <b>Projects</b> -> <a href="/projects">Dashboards, talks and more</a>
-        
-    <br><br>
+        <div class="projects-link">
+            <a href="/projects">Projects → Dashboards, talks and more</a>
+        </div>
 
-    <h4>Experience</h4>
-        <a href="https://datalens.tech"><b>Yandex DataLens</b></a> <tiny>Jun 2025 - Present</tiny>
-        Product Architect
-        <ul>
-            <li>Led commercial launch of DataLens On-premises: presales, architecture and first enterprise contracts, exceeding financial plan by 200%+</li>
-            <li>Created educational projects: paid admin course for enterprise clients, Cookbook, and a guest lecture at Skolkovo Business School</li>
-            <li>Developed AI-powered support chatbot with 350+ MAU, reducing dev team workload</li>
-            <li>Public speaker at major conferences, ran partner webinars and presales across 25+ client channels</li>
-        </ul><br>
+        <h2>Experience</h2>
 
-        <a href="https://sberbank.com/about/awards"><b>Sber</b></a> <tiny>Dec 2023 - May 2025 (1.5 y.)</tiny>
-        BI lead
-        <ul>
-            <li>Made top-line HR dashboard with core metrics</li>
-            <li>Built small yet effective team for salary analytics</li>
-            <li>Started BI community</li>
-        </ul><br>
+        <div class="job">
+            <div class="job-header">
+                <div class="company"><a href="https://datalens.tech">Yandex DataLens</a></div>
+                <div class="dates">Jun 2025 – Present</div>
+            </div>
+            <div class="role">Product Architect</div>
+            <ul>
+                <li>Led commercial launch of DataLens On-premises: presales, architecture and first enterprise contracts, exceeding financial plan by 200%+</li>
+                <li>Created educational projects: paid admin course for enterprise clients, Cookbook, and a guest lecture at Skolkovo Business School</li>
+                <li>Developed AI-powered support chatbot with 350+ MAU, reducing dev team workload</li>
+                <li>Public speaker at major conferences, ran partner webinars and presales across 25+ client channels</li>
+            </ul>
+        </div>
 
-        <a href="https://uzum.com"><b>Uzum</b></a> <tiny>Jan 2023 - Dec 2023 (1 y.)</tiny>
-        BI engineer
-        <ul>
-            <li>Developed self-service BI instrument for users</li>
-            <li>Evolved data-driven culture by being an ambassador of Superset BI in the company</li>
-            <li>Improved BI as a platform</li>
-        </ul><br>
-        
-        <a href="https://yandex.com/company/general_info/yandex_today/"><b>Yandex</b></a> BI analyst<tiny>Jun 2021 - Jan 2023 (1.8 y.)</tiny>
-        <ul>
-            <li>Took part in migration from Tableau to DataLens</li>
-            <li>Built an alerting service with 500+ DAU across multiple Yandex units: Market/Eda/Lavka</li>
-            <li>Automated the dashboards certification system to complete the SOX audit</li>
-        </ul><br>
+        <div class="job">
+            <div class="job-header">
+                <div class="company"><a href="https://sberbank.com/about/awards">Sber</a></div>
+                <div class="dates">Dec 2023 – May 2025 (1.5 y.)</div>
+            </div>
+            <div class="role">BI lead</div>
+            <ul>
+                <li>Made top-line HR dashboard with core metrics</li>
+                <li>Built small yet effective team for salary analytics</li>
+                <li>Started BI community</li>
+            </ul>
+        </div>
 
-<!--
-        <a href="https://tsum.com"><b>TSUM</b></a> BI developer<tiny>Apr 2021 - Aug 2021</tiny>
-        <ul>
-            <li>Implemented Power BI analytics</li>
-            <li>Developed top-line dashboards and P&L reports: from ETL to the visuals style-guides</li>
-        </ul><br> -->
+        <div class="job">
+            <div class="job-header">
+                <div class="company"><a href="https://uzum.com">Uzum</a></div>
+                <div class="dates">Jan 2023 – Dec 2023 (1 y.)</div>
+            </div>
+            <div class="role">BI engineer</div>
+            <ul>
+                <li>Developed self-service BI instrument for users</li>
+                <li>Evolved data-driven culture by being an ambassador of Superset BI in the company</li>
+                <li>Improved BI as a platform</li>
+            </ul>
+        </div>
 
-        <a href="https://huawei.com"><b>Huawei</b></a> Data Specialist <tiny>Feb 2020 - Jun 2021 (1.5 y.)</tiny>
-        <ul>
-            <li>Reduced more than 200 hours of routine work in logistics department by RPA automation</li>
-            <li>Turned 15+ key reports from Excel to BI dashboards</li>
-            <li>Implemented Power BI analytics</li>
-            <li>Developed top-line dashboards and P&L reports: from ETL to the visuals style-guides</li>
-        </ul>
+        <div class="job">
+            <div class="job-header">
+                <div class="company"><a href="https://yandex.com/company/general_info/yandex_today/">Yandex</a></div>
+                <div class="dates">Jun 2021 – Jan 2023 (1.8 y.)</div>
+            </div>
+            <div class="role">BI analyst</div>
+            <ul>
+                <li>Took part in migration from Tableau to DataLens</li>
+                <li>Built an alerting service with 500+ DAU across multiple Yandex units: Market/Eda/Lavka</li>
+                <li>Automated the dashboards certification system to complete the SOX audit</li>
+            </ul>
+        </div>
 
-        <br>
+        <div class="job">
+            <div class="job-header">
+                <div class="company"><a href="https://huawei.com">Huawei</a></div>
+                <div class="dates">Feb 2020 – Jun 2021 (1.5 y.)</div>
+            </div>
+            <div class="role">Data Specialist</div>
+            <ul>
+                <li>Reduced more than 200 hours of routine work in logistics department by RPA automation</li>
+                <li>Turned 15+ key reports from Excel to BI dashboards</li>
+                <li>Implemented Power BI analytics</li>
+                <li>Developed top-line dashboards and P&L reports: from ETL to the visuals style-guides</li>
+            </ul>
+        </div>
 
-        <h4>Pet project</h4>
-        <a href="https://t.me/randomoro_bot">Randomoro</a> - telegram bot that sends a random Youtube video. Made in 2017 and upgraded in 2022. Python + Google API + serverless webhooks
-        <br><br>
+        <h2>Pet project</h2>
+        <p><a href="https://t.me/randomoro_bot">Randomoro</a> – telegram bot that sends a random Youtube video. Made in 2017 and upgraded in 2022. Python + Google API + serverless webhooks</p>
 
-        <h4>Skills</h4>
-        <b>BI:</b> DataLens, Apache Superset, Tableau, Power BI
-        <br>
-        <b>Data:</b> SQL, Python, Airflow, Git
-        <br>
-        <b>Databases:</b> ClickHouse, Vertica, Greenplum, BigQuery
-        <br>
-        <b>Soft:</b> Presales, technical consulting, public speaking, documentation, fluent English
-        <br><br>
+        <h2>Skills</h2>
+        <div class="skills-grid">
+            <div class="skills-label">BI</div>
+            <div>DataLens, Apache Superset, Tableau, Power BI</div>
+            <div class="skills-label">Data</div>
+            <div>SQL, Python, Airflow, Git</div>
+            <div class="skills-label">Databases</div>
+            <div>ClickHouse, Vertica, Greenplum, BigQuery</div>
+            <div class="skills-label">Soft</div>
+            <div>Presales, technical consulting, public speaking, documentation, fluent English</div>
+        </div>
 
-        <h4>Education</h4>
-        State University of Management
-        <br>
-        Computer science<br><br>
+        <h2>Education</h2>
+        <p>State University of Management<br>Computer science</p>
 
-        <h4>Hobbies</h4>
-        Travel, fix-bikes and gardening 🌱
-    </p>
+        <h2>Hobbies</h2>
+        <p>Travel, fix-bikes and gardening 🌱</p>
+
+        <footer>
+            last updated: Apr, 2026
+            <img src="src/m.jpeg" alt="a picture of me" onerror="this.src='https://github.com/yogleb/yogleb.github.io/blob/main/src/m.jpeg?raw=true';">
+        </footer>
     </div>
-
-    <br>
-
-    <tiny>last updated: Apr, 2026</tiny>
-    <br>
-    <br>
-    <center>
-    <img src="src/m.jpeg" alt="a picture of me" onerror="this.src='https://github.com/yogleb/yogleb.github.io/blob/main/src/m.jpeg?raw=true';" width="22%"></center>
-    </div>
-</div>
 </body>
 </html>

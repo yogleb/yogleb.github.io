@@ -4,249 +4,198 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gleb's projects</title>
-    
     <style>
-        
         body {
-            font-family: 'Arial', monospace;
-            font-weight: normal;
-            font-style: normal;
-            color: black;
-            margin-left: 22px;
-            margin-right: 22px;
-            margin-top: 22px;
-            margin-bottom: 22px;
-        }
-
-        .flex{
-          display: flex;
-          align-items:center;
-          justify-content: center;
-        }
-        
-        .center{
-          background-color:white;
-          width:555px;
-        }
-
-        .centered_text {
-            text-align: center;
-        } 
-
-        .article-text {
-            max-width: 800px; /
-            margin: left; 
-            color: black;
-            font-size: 16px;
-        }
-
-        .normal-shadow {
-            background-size: cover;
-            background-position: 0% 100%;
-            border-radius: 40px;
-            height: 320px;
-            width: 320px;
-            box-shadow: 2px 5px 20px 1px #121601ad;
-        }
-
-        h1 {
-            font-weight: lighter;
-            font-size: 22px;
-            color: grey;
-            margin: 0; 
-        }
-
-        h4 {
-            font-size: 16px;
-            margin: 0; 
-        }
-
-        p {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            color: #1a1a1a;
             margin: 0;
-        } 
-        
-        tiny {
-            font-family: Georgia, Tinos, serif;
-            font-weight: normal;
-            font-style: normal;
-            font-size: 13px;
-            text-align: right;
-            color: grey;
-            float:right;
+            padding: 40px 20px;
+            font-size: 15px;
+            line-height: 1.5;
+            background: #fff;
         }
 
-        tiny_centered {
-            font-family: Georgia, Tinos, serif;
-            font-weight: normal;
-            font-style: normal;
-            font-size: 13px;
-            text-align: right;
-            color: grey;
-            float:center;
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
         }
 
-        ul {
-            list-style-type: '- ';
-            margin: 0
+        header {
+            margin-bottom: 28px;
+        }
+
+        .name {
+            font-size: 20px;
+            font-weight: 600;
+            margin: 0 0 6px;
+        }
+
+        .subtitle {
+            color: #555;
+            margin: 0 0 4px;
+        }
+
+        .note {
+            font-family: Georgia, 'Times New Roman', serif;
+            font-size: 13px;
+            color: #999;
         }
 
         a {
-            color: royalblue;
+            color: #4169e1;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .project {
+            margin-bottom: 40px;
+        }
+
+        .project-title {
+            font-weight: 600;
+            font-size: 15px;
+            margin-bottom: 8px;
+        }
+
+        .project-text {
+            color: #424245;
+            margin-bottom: 12px;
+        }
+
+        .challenges {
+            color: #555;
+            margin-bottom: 12px;
+        }
+
+        .challenges b {
+            color: #1a1a1a;
         }
 
         img {
             max-width: 100%;
-            max-height: 100%;
-            border-radius: 12px;
-            box-shadow: 2px 5px 20px 1px #121601ad;
-            -webkit-box-shadow: 2px 5px 20px 1px #121601ad;
-            -moz-box-shadow: 2px 5px 20px 1px #121601ad;
+            border-radius: 8px;
+            box-shadow: 1px 3px 14px rgba(0,0,0,0.2);
+            margin-top: 4px;
         }
-        
-        @media (max-width: 768px) {
+
+        img + img {
+            margin-top: 12px;
+        }
+
+        footer {
+            margin-top: 36px;
+            text-align: center;
+            font-size: 13px;
+        }
+
+        @media (max-width: 480px) {
             body {
-                font-size: 16px;
+                padding: 28px 16px;
             }
         }
     </style>
 </head>
-
-
-<!-- CONTENT -->
-
-
 <body>
-<div class="flex">
-    <div class="center" >
-    <div class="article-text" style="text-align:left;">
-        <b>Gleb Belov | Projects</b>
-            <br><br>
-        <p>A selection of BI projects I've built across different tools and domains.</p>
-            <br>
-        <tiny_centered>NDA data removed or faked, <a href="./">back to CV</a></tiny_centered>
-            <br><br><br>
+    <div class="container">
+        <header>
+            <div class="name">Gleb Belov | Projects</div>
+            <div class="subtitle">A selection of BI projects I've built across different tools and domains.</div>
+            <div class="note">NDA data removed or faked · <a href="./">back to CV</a></div>
+        </header>
 
-        <b>Neuro Scale Kazakhstan — DataLens talk</b>
-            <br><br>
-        Presented Yandex DataLens at <a href="https://kz.scale.yandex.cloud/?broadcast=131">Neuro Scale Kazakhstan</a>, covering the platform's core features and the new AI-powered assistant that lets users build charts and explore data in natural language. Also covered in a <a href="https://bluescreen.kz/kak-yandex-cloud-sobiraiet-sovriemiennuiu-platformu-dannykh-ot-data-lakehouse-do-datalens/">bluescreen.kz article</a>.
-            <br><br>
+        <div class="project">
+            <div class="project-title">Neuro Scale Kazakhstan — DataLens talk</div>
+            <div class="project-text">Presented Yandex DataLens at <a href="https://kz.scale.yandex.cloud/?broadcast=131">Neuro Scale Kazakhstan</a>, covering the platform's core features and the new AI-powered assistant that lets users build charts and explore data in natural language. Also covered in a <a href="https://bluescreen.kz/kak-yandex-cloud-sobiraiet-sovriemiennuiu-platformu-dannykh-ot-data-lakehouse-do-datalens/">bluescreen.kz article</a>.</div>
             <img src="src/neuro_scale_kz.jpg" alt="Gleb Belov speaking at Neuro Scale Kazakhstan" onerror="this.src='https://github.com/yogleb/yogleb.github.io/blob/main/src/neuro_scale_kz.jpg?raw=true';">
-            <br><br><br><br><br>
+        </div>
 
-        <b>Skolkovo Business School — Guest Lecturer</b>
-            <br><br>
-        Teaching data analytics and BI to senior executives as part of the <a href="https://www.skolkovo.ru/programmes/upravlenie-biznesom-na-dannyh/">Business Management with AI and Data</a> programme at Skolkovo Moscow School of Management.
-            <br><br>
+        <div class="project">
+            <div class="project-title">Skolkovo Business School — Guest Lecturer</div>
+            <div class="project-text">Teaching data analytics and BI to senior executives as part of the <a href="https://www.skolkovo.ru/programmes/upravlenie-biznesom-na-dannyh/">Business Management with AI and Data</a> programme at Skolkovo Moscow School of Management.</div>
             <img src="src/skolkovo_lecture.jpg" alt="Gleb Belov lecturing at Skolkovo Business School" onerror="this.src='https://github.com/yogleb/yogleb.github.io/blob/main/src/skolkovo_lecture.jpg?raw=true';">
-            <br><br><br><br><br>
+        </div>
 
-        <b>DataLens Festival 2025 — Speaker</b>
-            <br><br>
-        Spoke at the <a href="https://datalens.ru/festival">DataLens Festival 2025</a> on the On-premises day, covering best practices and architecture for administrators. Also recorded two videos: <a href="https://www.youtube.com/watch?v=wc9rGjWB1Eo">Export & Import feature</a> and <a href="https://www.youtube.com/watch?v=2Ub5HSmbqcs">New DataLens capabilities</a>.
-            <br><br>
+        <div class="project">
+            <div class="project-title">DataLens Festival 2025 — Speaker</div>
+            <div class="project-text">Spoke at the <a href="https://datalens.ru/festival">DataLens Festival 2025</a> on the On-premises day, covering best practices and architecture for administrators. Also recorded two videos: <a href="https://www.youtube.com/watch?v=wc9rGjWB1Eo">Export & Import feature</a> and <a href="https://www.youtube.com/watch?v=2Ub5HSmbqcs">New DataLens capabilities</a>.</div>
             <img src="src/datalens_festival_2025.png" alt="DataLens Festival 2025 talk screenshot" onerror="this.src='https://github.com/yogleb/yogleb.github.io/blob/main/src/datalens_festival_2025.png?raw=true';">
-            <br><br><br><br><br>
+        </div>
 
-        <b>DataLens On-Premises — Admin course & Cookbook</b>
-            <br><br>
-        Created a <a href="https://rebrainme.com/courses/datalens">paid course</a> for DevOps, SREs and system administrators on deploying and managing DataLens On-Premises: architecture, authorization, monitoring, backups and database connectivity. Also available as a <a href="https://yandex.cloud/ru/training/intensives">B2B intensive</a> via Yandex Cloud. Free version — a <a href="https://datalens.ru/on-premises/docs/ru/cookbook/architecture.html">Cookbook</a> with articles covering the same topics.
-            <br><br>
+        <div class="project">
+            <div class="project-title">DataLens On-Premises — Admin course & Cookbook</div>
+            <div class="project-text">Created a <a href="https://rebrainme.com/courses/datalens">paid course</a> for DevOps, SREs and system administrators on deploying and managing DataLens On-Premises: architecture, authorization, monitoring, backups and database connectivity. Also available as a <a href="https://yandex.cloud/ru/training/intensives">B2B intensive</a> via Yandex Cloud. Free version — a <a href="https://datalens.ru/on-premises/docs/ru/cookbook/architecture.html">Cookbook</a> with articles covering the same topics.</div>
             <img src="src/datalens_onprem_course.png" alt="DataLens On-Premises admin course" onerror="this.src='https://github.com/yogleb/yogleb.github.io/blob/main/src/datalens_onprem_course.png?raw=true';">
-            <br><br><br>
             <img src="src/datalens_onprem_course_2.png" alt="DataLens On-Premises admin course" onerror="this.src='https://github.com/yogleb/yogleb.github.io/blob/main/src/datalens_onprem_course_2.png?raw=true';">
-            <br><br><br><br><br>
+        </div>
 
-        <b>Embedded Analytics in DataLens — Webinar</b>
-            <br><br>
-        Hosted a <a href="https://yandex.cloud/ru/events/1471">webinar</a> on embedding DataLens dashboards into external services — corporate portals, client dashboards and partner interfaces. Covered use cases, security mechanics and a real-world case from Yandex Tickets. <a href="https://youtube.com/live/kexJDKVbHqc">Watch recording</a>.
-            <br><br>
+        <div class="project">
+            <div class="project-title">Embedded Analytics in DataLens — Webinar</div>
+            <div class="project-text">Hosted a <a href="https://yandex.cloud/ru/events/1471">webinar</a> on embedding DataLens dashboards into external services — corporate portals, client dashboards and partner interfaces. Covered use cases, security mechanics and a real-world case from Yandex Tickets. <a href="https://youtube.com/live/kexJDKVbHqc">Watch recording</a>.</div>
             <img src="src/datalens_embedded_webinar.png" alt="Embedded Analytics in DataLens webinar" onerror="this.src='https://github.com/yogleb/yogleb.github.io/blob/main/src/datalens_embedded_webinar.png?raw=true';">
-            <br><br><br><br><br>
+        </div>
 
-        <b>E-com Rangers mysterious profits</b>
-            <br><br>
-        You can <a href="https://datalens.ru/gallery/kpa293of28nq5">use this dashboard</a> to check your business analysis skills: explore data, use filters, and try to answer the questions.
-            <br><br>
-            <img src="src/datalens_3.png" alt="a picture of DataLens report" onerror="this.src='https://github.com/yogleb/yogleb.github.io/blob/main/src/datalens_3.png?raw=true';">
-            <br><br><br><br><br>
+        <div class="project">
+            <div class="project-title">E-com Rangers mysterious profits</div>
+            <div class="project-text">You can <a href="https://datalens.ru/gallery/kpa293of28nq5">use this dashboard</a> to check your business analysis skills: explore data, use filters, and try to answer the questions.</div>
+            <img src="src/datalens_3.png" alt="DataLens report" onerror="this.src='https://github.com/yogleb/yogleb.github.io/blob/main/src/datalens_3.png?raw=true';">
+        </div>
 
-        <b>Cross-Service Usage DataLens Dashboard</b>
-            <br><br>
-        Showed how different units within the company interact with each other, helping identify dependencies and improve resource allocation.
-            <br>
-        <b>Challenges:</b> Integrating data from multiple sources with different formats and keeping metrics consistent across units.
-            <br><br>
-            <img src="src/datalens_1.png" alt="a picture of DataLens report" onerror="this.src='https://github.com/yogleb/yogleb.github.io/blob/main/src/datalens_1.png?raw=true';">
-            <br><br><br><br><br>
+        <div class="project">
+            <div class="project-title">Cross-Service Usage DataLens Dashboard</div>
+            <div class="project-text">Showed how different units within the company interact with each other, helping identify dependencies and improve resource allocation.</div>
+            <div class="challenges"><b>Challenges:</b> Integrating data from multiple sources with different formats and keeping metrics consistent across units.</div>
+            <img src="src/datalens_1.png" alt="DataLens report" onerror="this.src='https://github.com/yogleb/yogleb.github.io/blob/main/src/datalens_1.png?raw=true';">
+        </div>
 
-        <b>Topline Plan-Fact GMV DataLens Dashboard</b>
-            <br><br>
-        Enabled real-time tracking of Gross Merchandise Value (GMV) against planned targets, helping the business monitor performance and adjust strategies.
-            <br>
-        <b>Challenges:</b> Visualizing plan-fact variances so they are easy to act on, making key metrics stand out while keeping a clean design.
-            <br><br>
-            <img src="src/datalens_22.png" alt="a picture of DataLens report" onerror="this.src='https://github.com/yogleb/yogleb.github.io/blob/main/src/datalens_22.png?raw=true';">
-            <br><br><br><br><br>
+        <div class="project">
+            <div class="project-title">Topline Plan-Fact GMV DataLens Dashboard</div>
+            <div class="project-text">Enabled real-time tracking of Gross Merchandise Value (GMV) against planned targets, helping the business monitor performance and adjust strategies.</div>
+            <div class="challenges"><b>Challenges:</b> Visualizing plan-fact variances so they are easy to act on, making key metrics stand out while keeping a clean design.</div>
+            <img src="src/datalens_22.png" alt="DataLens report" onerror="this.src='https://github.com/yogleb/yogleb.github.io/blob/main/src/datalens_22.png?raw=true';">
+        </div>
 
-        <b>CSI of Merchants Tableau Dashboard</b>
-            <br><br>
-        Analyzed and visualized merchant performance on the marketplace, helping identify trends and underperforming merchants.
-            <br>
-        <b>Challenges:</b> Dealing with incomplete merchant data and creating intuitive visualizations for non-technical stakeholders.  
-            <br><br>
-            <img src="src/y_tableau_dash.png" alt="a picture of Tableau report" onerror="this.src='https://github.com/yogleb/yogleb.github.io/blob/main/src/y_tableau_dash.png?raw=true';">
-            <br><br><br><br><br>
-        
-        <b>Map Cross-Filtering Tableau Example</b>
-            <br><br>
-        An example of using map charts to filter bar charts dynamically, making data exploration more interactive.
-            <br><br>
-            <img src="src/tableau_0.png" alt="a picture of Tableau report" onerror="this.src='https://github.com/yogleb/yogleb.github.io/blob/main/src/tableau_0.png?raw=true';">
-            <br><br><br><br><br>
+        <div class="project">
+            <div class="project-title">CSI of Merchants Tableau Dashboard</div>
+            <div class="project-text">Analyzed and visualized merchant performance on the marketplace, helping identify trends and underperforming merchants.</div>
+            <div class="challenges"><b>Challenges:</b> Dealing with incomplete merchant data and creating intuitive visualizations for non-technical stakeholders.</div>
+            <img src="src/y_tableau_dash.png" alt="Tableau report" onerror="this.src='https://github.com/yogleb/yogleb.github.io/blob/main/src/y_tableau_dash.png?raw=true';">
+        </div>
 
-        <b>Superset Cheat Sheet</b>
-            <br><br>
-        Created a cheat sheet to help analytics teams and other users quickly understand how BI tools work, reducing onboarding time.  
-            <br><br>
-            <img src="src/superset_1.png" alt="a picture of DataLens report" onerror="this.src='https://github.com/yogleb/yogleb.github.io/blob/main/src/superset_1.png?raw=true';">
-            <br><br><br>
-            <img src="src/superset_2.png" alt="a picture of DataLens report" onerror="this.src='https://github.com/yogleb/yogleb.github.io/blob/main/src/superset_2.png?raw=true';">
-            <br><br><br><br><br>
+        <div class="project">
+            <div class="project-title">Map Cross-Filtering Tableau Example</div>
+            <div class="project-text">An example of using map charts to filter bar charts dynamically, making data exploration more interactive.</div>
+            <img src="src/tableau_0.png" alt="Tableau report" onerror="this.src='https://github.com/yogleb/yogleb.github.io/blob/main/src/tableau_0.png?raw=true';">
+        </div>
 
-        <b>Automated Dashboard Delivery via Telegram</b>
-            <br><br>
-        Built a Python-based service that sends Tableau or DataLens dashboard images to users on a schedule or when specific metric alerts are triggered, serving 500+ daily active users.
-            <br>
-        <b>Challenges:</b> Reliable delivery of compressed but high-quality images, handling API rate limits, and scaling the service as user base grew.
-            <br><br>
-            <img class="avatar" src="src/bi_bot.jpeg" alt="a picture of BI bot" onerror="this.src='https://github.com/yogleb/yogleb.github.io/blob/main/src/bi_bot.jpeg?raw=true';">
-            <br><br><br><br><br>
+        <div class="project">
+            <div class="project-title">Superset Cheat Sheet</div>
+            <div class="project-text">Created a cheat sheet to help analytics teams and other users quickly understand how BI tools work, reducing onboarding time.</div>
+            <img src="src/superset_1.png" alt="Superset cheat sheet" onerror="this.src='https://github.com/yogleb/yogleb.github.io/blob/main/src/superset_1.png?raw=true';">
+            <img src="src/superset_2.png" alt="Superset cheat sheet" onerror="this.src='https://github.com/yogleb/yogleb.github.io/blob/main/src/superset_2.png?raw=true';">
+        </div>
 
-        <b>TSUM Finance Overview PowerBI Dashboard</b>
-            <br><br>
-        A topline financial overview of TSUM’s main units, giving executives a clear view of performance across the business.
-            <br>
-        <b>Challenges:</b> Consolidating financial data from different systems and ensuring data security while keeping reports useful for executives.
-            <br><br>
-            <img src="src/powerbi_1.jpeg" alt="a picture of PowerBI report" onerror="this.src='https://github.com/yogleb/yogleb.github.io/blob/main/src/powerbi_1.jpeg?raw=true';">
-            <br><br><br>
-            <img src="src/powerbi_2.jpeg" alt="a picture of PowerBI report" onerror="this.src='https://github.com/yogleb/yogleb.github.io/blob/main/src/powerbi_2.jpeg?raw=true';">
-            <br><br><br>
-            <img src="src/powerbi_3.jpeg" alt="a picture of PowerBI report" onerror="this.src='https://github.com/yogleb/yogleb.github.io/blob/main/src/powerbi_3.jpeg?raw=true';">
-            <br><br><br><br><br>
-        
-        <!-- <br><br><br>
-        <img src="src/powerbi_4.jpeg" alt="a picture of PowerBI report"> 
-        <br><br><br><br><br>
+        <div class="project">
+            <div class="project-title">Automated Dashboard Delivery via Telegram</div>
+            <div class="project-text">Built a Python-based service that sends Tableau or DataLens dashboard images to users on a schedule or when specific metric alerts are triggered, serving 500+ daily active users.</div>
+            <div class="challenges"><b>Challenges:</b> Reliable delivery of compressed but high-quality images, handling API rate limits, and scaling the service as user base grew.</div>
+            <img src="src/bi_bot.jpeg" alt="BI bot" onerror="this.src='https://github.com/yogleb/yogleb.github.io/blob/main/src/bi_bot.jpeg?raw=true';">
+        </div>
 
-        bonus cat
-        <br><br>
-        <img src="src/cat.jpg" alt="a picture of bonus cat" onerror="this.src='https://github.com/yogleb/yogleb.github.io/blob/main/src/cat.jpg?raw=true';">-->
-        
-        <a href="./">back to CV</a>
-        <br><br>
+        <div class="project">
+            <div class="project-title">TSUM Finance Overview PowerBI Dashboard</div>
+            <div class="project-text">A topline financial overview of TSUM's main units, giving executives a clear view of performance across the business.</div>
+            <div class="challenges"><b>Challenges:</b> Consolidating financial data from different systems and ensuring data security while keeping reports useful for executives.</div>
+            <img src="src/powerbi_1.jpeg" alt="PowerBI report" onerror="this.src='https://github.com/yogleb/yogleb.github.io/blob/main/src/powerbi_1.jpeg?raw=true';">
+            <img src="src/powerbi_2.jpeg" alt="PowerBI report" onerror="this.src='https://github.com/yogleb/yogleb.github.io/blob/main/src/powerbi_2.jpeg?raw=true';">
+            <img src="src/powerbi_3.jpeg" alt="PowerBI report" onerror="this.src='https://github.com/yogleb/yogleb.github.io/blob/main/src/powerbi_3.jpeg?raw=true';">
+        </div>
+
+        <footer>
+            <a href="./">back to CV</a>
+        </footer>
     </div>
-    </div>
-</div>
 </body>
 </html>
