@@ -67,18 +67,28 @@
             text-decoration: underline;
         }
 
-        .projects-link {
-            margin-bottom: 28px;
+        .see-more {
+            display: inline-block;
+            margin-top: 8px;
+            font-size: 13px;
         }
 
         h2 {
+            display: flex;
+            align-items: center;
+            gap: 12px;
             font-family: Georgia, 'Times New Roman', serif;
             font-size: 14px;
             font-weight: normal;
-            text-transform: uppercase;
             letter-spacing: 0.5px;
-            color: #999;
+            color: #888;
             margin: 28px 0 14px;
+        }
+
+        h2::after {
+            content: "";
+            flex: 1;
+            border-top: 1px solid #e5e5e5;
         }
 
         .job {
@@ -166,16 +176,12 @@
             <div class="subtitle">Product Architect with 6+ years experience in data-driven solutions.</div>
             <div class="subtitle">I design product architecture and drive adoption for enterprise clients</div>
             <div class="contacts">
-                <span>GMT+3</span>
                 <span><a href="https://t.me/glebbe">Tg: @glebbe</a></span>
                 <span><a href="mailto:glebbelov@yandex-team.com">glebbelov@yandex-team.com</a></span>
                 <span><a href="https://www.linkedin.com/in/gleb-belov-568616259/">LinkedIn</a></span>
+                <span><a href="projects.html">Portfolio</a></span>
             </div>
         </header>
-
-        <div class="projects-link">
-            <a href="/projects">Projects → Dashboards, talks and more</a>
-        </div>
 
         <h2>Experience</h2>
 
@@ -197,7 +203,7 @@
         <div class="job">
             <div class="job-header">
                 <div class="company"><a href="https://sberbank.com/about/awards">Sber</a></div>
-                <div class="dates">Dec 2023 – May 2025 (1.5 y.)</div>
+                <div class="dates">Jan 2024 – May 2025 (1.4 y.)</div>
             </div>
             <div class="role">BI lead</div>
             <div class="job-summary">I led BI in Sber's HR Research and Analytics Center, supporting research and workforce analytics across hundreds of thousands of employees.</div>
@@ -225,7 +231,7 @@
         <div class="job">
             <div class="job-header">
                 <div class="company"><a href="https://yandex.com/company/general_info/yandex_today/">Yandex</a></div>
-                <div class="dates">Jun 2021 – Jan 2023 (1.8 y.)</div>
+                <div class="dates">Jun 2021 – Dec 2022 (1.6 y.)</div>
             </div>
             <div class="role">BI analyst</div>
             <div class="job-summary">In the Core BI team, I helped run and improve a BI platform used by 1,200+ people each week, with a focus on automation and reliable operation.</div>
@@ -239,7 +245,7 @@
         <div class="job">
             <div class="job-header">
                 <div class="company"><a href="https://huawei.com">Huawei</a></div>
-                <div class="dates">Feb 2020 – Jun 2021 (1.5 y.)</div>
+                <div class="dates">Feb 2020 – May 2021 (1.3 y.)</div>
             </div>
             <div class="role">Data Specialist</div>
             <div class="job-summary">I started my analytics career at Huawei, working in English with business stakeholders and management in an international team. My focus was reporting and process automation.</div>
@@ -250,6 +256,26 @@
                 <li>Developed top-line dashboards and P&L reports: from ETL to the visuals style-guides</li>
             </ul>
         </div>
+
+        <section aria-labelledby="talks-heading">
+            <h2 id="talks-heading">Talks</h2>
+            <ul>
+                <li><a href="https://www.youtube.com/watch?v=IEFXUL7Csfk">Aha 2026</a>: Showed how the DataLens AI assistant helps people explore their data.</li>
+                <li><a href="https://www.skolkovo.ru/programmes/upravlenie-biznesom-na-dannyh/">Skolkovo Business School</a>: Gave a guest lecture on data analytics and BI for senior executives.</li>
+                <li><a href="https://kz.scale.yandex.cloud/?broadcast=131">Neuro Scale Kazakhstan</a>: Pitched DataLens at Neuro Scale Kazakhstan, highlighting the on-premises edition and our plans for the product.</li>
+            </ul>
+            <a class="see-more" href="projects.html#talks">All talks →</a>
+        </section>
+
+        <section aria-labelledby="projects-heading">
+            <h2 id="projects-heading">Projects</h2>
+            <ul>
+                <li><a href="https://datalens.ru/gallery/jb2qa3ne7uh02">Yandex Tracker</a>: Connected Tracker to DataLens so teams can explore tasks by type and priority.</li>
+                <li><a href="https://datalens.ru/gallery/k4qppk6pqrb63">NYC Yellow Taxi</a>: Built a dashboard on hundreds of millions of taxi records to compare service commissions and driver earnings.</li>
+                <li><a href="https://datalens.ru/gallery/kpa293of28nq5">E-com Rangers</a>: Created an interactive dashboard where readers investigate a marketplace’s profits.</li>
+            </ul>
+            <a class="see-more" href="projects.html#projects">All projects →</a>
+        </section>
 
         <h2>Pet project</h2>
         <p><a href="https://t.me/randomoro_bot">Randomoro</a> – telegram bot that sends a random Youtube video. Made in 2017 and upgraded in 2022. Python + Google API + serverless webhooks</p>
@@ -273,7 +299,7 @@
         <p>Travel, fix-bikes and gardening 🌱</p>
 
         <footer>
-            last updated: Apr, 2026
+            last updated: Nov, 2026
             <img src="src/m.jpeg" alt="a picture of me" onerror="this.src='https://github.com/yogleb/yogleb.github.io/blob/main/src/m.jpeg?raw=true';">
         </footer>
     </div>
