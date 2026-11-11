@@ -38,7 +38,7 @@
         .note {
             font-family: Georgia, 'Times New Roman', serif;
             font-size: 13px;
-            color: #999;
+            color: #888;
         }
 
         a {
@@ -52,6 +52,24 @@
 
         .project {
             margin-bottom: 40px;
+        }
+
+        h2 {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-family: Georgia, 'Times New Roman', serif;
+            font-size: 16px;
+            font-weight: normal;
+            color: #888;
+            margin: 28px 0 14px;
+            scroll-margin-top: 20px;
+        }
+
+        h2::after {
+            content: "";
+            flex: 1;
+            border-top: 1px solid #e5e5e5;
         }
 
         .project-title {
@@ -101,10 +119,12 @@
 <body>
     <div class="container">
         <header>
-            <div class="name">Gleb Belov | Projects</div>
+            <div class="name">Gleb Belov</div>
             <div class="subtitle">A selection of BI projects I've built across different tools and domains.</div>
             <div class="note">NDA data removed or faked · <a href="./">back to CV</a></div>
         </header>
+
+        <h2 id="talks">Talks</h2>
 
         <div class="project">
             <div class="project-title">Aha 2026 — AI in BI talk</div>
@@ -120,13 +140,13 @@
 
         <div class="project">
             <div class="project-title">Neuro Scale Kazakhstan — DataLens talk</div>
-            <div class="project-text">Presented Yandex DataLens at <a href="https://kz.scale.yandex.cloud/?broadcast=131">Neuro Scale Kazakhstan</a>, covering the platform's core features and the new AI-powered assistant that lets users build charts and explore data in natural language. Also covered in a <a href="https://bluescreen.kz/kak-yandex-cloud-sobiraiet-sovriemiennuiu-platformu-dannykh-ot-data-lakehouse-do-datalens/">bluescreen.kz article</a>.</div>
+            <div class="project-text">Pitched DataLens at <a href="https://kz.scale.yandex.cloud/?broadcast=131">Neuro Scale Kazakhstan</a>. I outlined our product strategy and introduced the on-premises edition for teams that run analytics on their own infrastructure. The talk was covered in a <a href="https://bluescreen.kz/kak-yandex-cloud-sobiraiet-sovriemiennuiu-platformu-dannykh-ot-data-lakehouse-do-datalens/">bluescreen.kz article</a>.</div>
             <img src="src/neuro_scale_kz.jpg" alt="Gleb Belov speaking at Neuro Scale Kazakhstan" onerror="this.src='https://github.com/yogleb/yogleb.github.io/blob/main/src/neuro_scale_kz.jpg?raw=true';">
         </div>
 
         <div class="project">
-            <div class="project-title">Skolkovo Business School — Guest Lecturer</div>
-            <div class="project-text">Teaching data analytics and BI to senior executives as part of the <a href="https://www.skolkovo.ru/programmes/upravlenie-biznesom-na-dannyh/">Business Management with AI and Data</a> programme at Skolkovo Moscow School of Management.</div>
+            <div class="project-title">Skolkovo Business School — Guest Lecture</div>
+            <div class="project-text">Gave a guest lecture on data analytics and BI for senior executives in the <a href="https://www.skolkovo.ru/programmes/upravlenie-biznesom-na-dannyh/">Business Management with AI and Data</a> programme at Skolkovo Moscow School of Management.</div>
             <img src="src/skolkovo_lecture.jpg" alt="Gleb Belov lecturing at Skolkovo Business School" onerror="this.src='https://github.com/yogleb/yogleb.github.io/blob/main/src/skolkovo_lecture.jpg?raw=true';">
         </div>
 
@@ -148,6 +168,8 @@
             <div class="project-text">Hosted a <a href="https://yandex.cloud/ru/events/1471">webinar</a> on embedding DataLens dashboards into external services — corporate portals, client dashboards and partner interfaces. Covered use cases, security mechanics and a real-world case from Yandex Tickets. <a href="https://youtube.com/live/kexJDKVbHqc">Watch recording</a>.</div>
             <img src="src/datalens_embedded_webinar.png" alt="Embedded Analytics in DataLens webinar" onerror="this.src='https://github.com/yogleb/yogleb.github.io/blob/main/src/datalens_embedded_webinar.png?raw=true';">
         </div>
+
+        <h2 id="projects">Projects</h2>
 
         <div class="project">
             <div class="project-title">Yandex Tracker — DataLens Integration</div>
